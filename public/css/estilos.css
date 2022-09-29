@@ -1,0 +1,486 @@
+:root {
+
+    /**
+     * colors
+     */
+  
+    --rich-black-fogra-29: hsl(225, 25%, 9%);
+    --rich-black-fogra-39: hsl(170, 21%, 5%);
+    --raisin-black: hsl(228, 13%, 15%);
+    --eerie-black: hsl(207, 19%, 11%);
+    --light-gray: hsl(0, 3%, 80%);
+    --gunmetal-1: hsl(229, 15%, 21%);
+    --gunmetal-2: hsl(216, 22%, 18%);
+    --gainsboro: hsl(0, 7%, 88%);
+    --citrine: rgb(248 113 113);
+    --xiketic: hsl(253, 21%, 13%);
+    --gray-x: hsl(0, 0%, 74%);
+    --white: hsl(0, 100%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --jet: hsl(0, 0%, 20%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    --fs-1: 36px;
+    --fs-2: 32px;
+    --fs-3: 30px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 18px;
+    --fs-7: 16px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+    --fs-12: 11px;
+  
+    --fw-500: 500;
+    --fw-700: 700;
+  
+    /**
+     * transition
+     */
+  
+    --transition-1: 0.15s ease;
+    --transition-2: 0.25s ease-in;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 100px;
+  
+  }
+  
+/* CSS Universal */
+* {
+    font-family: 'Google Sans';
+    scroll-behavior: smooth;
+    letter-spacing: 0.05em;
+    outline: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius:2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb .box-info-content {
+    background: #333;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#movie-name{
+    font-family: 'Press Start 2P', cursive;
+}
+
+#movie-btn-discord{
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    background-color: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+    filter: invert(1);
+}
+  
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .3;
+    pointer-events: all;
+}
+
+body{
+    background-color: rgb(24, 24, 27);
+}
+
+.bg-back-oficial{
+    background-color: rgb(24, 24, 27);
+}
+
+.bg-back-second{
+    background-color: rgba(97, 96, 96, 0.2);
+}
+
+.backdrop-blur{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.backdrop-blur-black{
+    background-color: rgba(24, 24, 27, .5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+/* CSS Universal */
+
+
+/* CSS Sliders - Hero */
+.sliders{
+    background-position: center -20px; 
+    height: 600px;
+    -webkit-box-shadow: inset 0px -60px 30px 0px rgb(24, 24, 27);
+    -moz-box-shadow: inset 0px -60px 30px 0px rgb(24, 24, 27);
+    box-shadow: inset 0px -60px 30px 0px rgb(24, 24, 27);
+}
+
+.sombra-new-design{
+    -webkit-box-shadow: inset 0px -60px 30px 0px rgba(29,29,29,1);
+    -moz-box-shadow: inset 0px -60px 30px 0px rgba(29,29,29,1);
+    box-shadow: inset 0px -60px 30px 0px rgba(29,29,29,1);
+}
+
+.sombra{
+    background-color: rgba(24, 24, 27, .5);
+}
+
+.owl-carousel-1 > .owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none !important;
+}
+
+.owl-carousel-generos > .owl-dots {
+    position: absolute;
+    bottom: 1;
+    right: 0;
+    left: 0;
+}
+
+.owl-dot {
+    margin: 0px !important;
+    outline: none !important;
+
+    transition-delay: 100ms ease;
+    transition: 100ms ease;
+}
+
+.owl-dot span {
+    background-color: rgba(233, 233, 233, 0.5) !important;
+    width: 8px !important;
+    height: 8px !important;
+
+    transition-delay: 100ms ease;
+    transition: 100ms ease;
+}
+
+.owl-dot span:hover {
+    background-color: rgba(239, 68, 68, 1) !important;
+    width: 8px !important;
+    height: 8px !important;
+
+    transition-delay: 100ms ease;
+    transition: 100ms ease;
+}
+
+.owl-dot.active span {
+    background-color: rgba(239, 68, 68, 1) !important;
+    width: 30px !important;
+    height: 8px !important;
+
+    transition-delay: 100ms ease;
+    transition: 100ms ease;
+}
+/* CSS Sliders - Hero */
+
+
+/* Contenido CSS */
+.genero{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lista-image-background{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_p {
+    margin: 0 auto !important;
+    padding: 0%;
+    max-width: 100%;
+}
+  
+.container_p .item {
+    margin: 0.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container_p .item p {
+    width: 185px;
+    font-size: .9em;
+}
+
+.poster {
+    /*height: 298px;*/
+    margin-bottom: .5em;
+}
+
+.poster:hover .sombra-content{
+    display: inline-flex;
+}
+
+/*.poster-trending:hover .sombra-content{
+    display: inline-flex;
+}*/
+
+.sombra-content-trending{
+    -webkit-box-shadow: inset 0px -50px 30px 0px rgba(29,29,29,1);
+    -moz-box-shadow: inset 0px -50px 30px 0px rgba(29,29,29,1);
+    box-shadow: inset 0px -50px 30px 0px rgba(29,29,29,1);
+}
+
+.play-btn{
+    animation: pulse 1.5s infinite;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+.toggle__dot{
+    top: -.25rem;
+    left: -.25rem;
+    transition: all 0.3s ease-in-out;
+}
+  
+input:checked ~ .toggle__dot{
+    transform: translateX(100%);
+    background-color: #EE5E53;
+}
+
+.box-list-box{
+    background-image: url("https://www.themoviedb.org/t/p/original/VlHt27nCqOuTnuX6bku8QZapzO.jpg");
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes pulse{
+    0% {
+    transform: scale(.99);
+    box-shadow: 0 0 0 0 rgba(256, 256, 256, .5);
+    }
+    70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(256, 256, 256, 0);
+    }
+    100% {
+    transform: scale(.99);
+    box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+}
+/* Contenido CSS */
+
+/**
+ * MOVIE CARD
+ */
+
+ .movies-list {
+    display: grid;
+    gap: 50px;
+  }
+  
+  .movie-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-card .card-banner {
+    position: relative;
+    background: var(--gunmetal-1);
+    aspect-ratio: 2 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: var(--transition-1);
+  }
+  
+  .movie-card .card-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: var(--transition-1);
+  }
+  
+  .movie-card .card-banner:hover { box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5); }
+  
+  .movie-card .card-banner:hover::after { background: hsla(0, 0%, 100%, 0.05); }
+  
+  .movie-card .card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .movie-card .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card .card-title {
+    color: var(--white);
+    font-size: var(--fs-7);
+    transition: var(--transition-1);
+  }
+  
+  .movie-card .card-title:is(:hover, :focus) { color: var(--citrine); }
+  
+  .movie-card .title-wrapper time {
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+  }
+
+/**
+ * MOVIE CARD
+ */
+
+ /**
+ * DAYZ HORIZONTAL CARD
+ */
+
+ .dayz-horizontal-list {
+    display: grid;
+    gap: 50px;
+  }
+  
+  .dayz-horizontal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .dayz-horizontal .card-banner {
+    position: relative;
+    background: var(--gunmetal-1);
+    aspect-ratio: 5 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: var(--transition-1);
+  }
+  
+  .dayz-horizontal .card-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: var(--transition-1);
+  }
+  
+  .dayz-horizontal .card-banner:hover { box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5); }
+  
+  .dayz-horizontal .card-banner:hover::after { background: hsla(0, 0%, 100%, 0.05); }
+  
+  .dayz-horizontal .card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .dayz-horizontal .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dayz-horizontal .card-title {
+    color: var(--white);
+    font-size: var(--fs-7);
+    transition: var(--transition-1);
+  }
+  
+  .dayz-horizontal .card-title:is(:hover, :focus) { color: var(--citrine); }
+  
+  .dayz-horizontal .title-wrapper time {
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+  }
+
+/**
+ * DAYZ HORIZONTAL CARD
+ */
+
+/**
+ * Lista de Favoritos
+ */
+
+ .list li {
+    cursor: pointer;
+  }
+  .list li:hover:after,
+  .list li.fav:after {
+    content: ' \2605';
+    color: rgb(255, 203, 0);
+  }
+  .list li.fav:hover:after {
+    content: ' \2606';
+  }
+  
+/**
+ * Lista de Favoritos
+ */
+
+ .btn-discord:hover {
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+  }
+
+.bg-sangre{
+    background-image: url(/img/bg/bg_btnsangre.jpeg);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-img-bg{
+    background-image: url(/img/bg/bg_temporada_1.jpeg);
+
+    background-position: center start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.twitter-timeline{
+    width: 100% !important;
+}
