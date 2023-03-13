@@ -53,6 +53,18 @@
      */
   
     --section-padding: 100px;
+
+    --button-height: 3rem;
+    --color-text: rgba(0,0,0,.25);
+    --color-text-shadow: rgba(255,255,255,.15);
+    --color-page-bg:#B9B5AA;
+    --color-bg:#899095;
+    --color-bg-light:#969DA3;
+    --color-bg-dark: #7D878F;
+    --color-overlay-light: rgba(255,255,255,.2);
+    --color-overlay-medium: rgba(0,0,0,.1);
+    --color-overlay-dark: rgba(0,0,0,.2);
+    --color-tab-focus: rgba(255,255,255,.15);
   
   }
   
@@ -90,12 +102,28 @@
     background: #555;
 }
 
-#movie-name{
-    font-family: 'Press Start 2P', cursive;
+/* prueba de una fuente mas god */
+
+@font-face {
+  font-family: 'Urban Jungle';
+  src: url('/fonts/UrbanJungle.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#movie-btn-discord{
+/* prueba de una fuente mas god */
+
+#movie-name{
+    font-family: 'Urban Jungle';
+    text-shadow: 2px 2px 10px black;
+}
+
+.font-poppins{
     font-family: 'Poppins', sans-serif;
+}
+
+.font-ujungle{
+  font-family: 'Urban Jungle';
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -460,10 +488,10 @@ input:checked ~ .toggle__dot{
  * Lista de Favoritos
  */
 
- .btn-discord:hover {
-    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1.5s; /* don't forget to set a duration! */
-  }
+ /*.btn-discord:hover {
+    animation: rubberBand; 
+    animation-duration: 1.5s; 
+  }*/
 
 .bg-sangre{
     background-image: url(/img/bg/bg_btnsangre.jpeg);
@@ -474,13 +502,192 @@ input:checked ~ .toggle__dot{
 }
 
 .grid-img-bg{
-    background-image: url(/img/bg/bg_temporada_1.jpeg);
+    background-image: url(/img/bg/bg_bunker.jpg);
 
-    background-position: center start;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.bg-up1{
+  background-image: url(https://img.lovepik.com/background/20211021/medium/lovepik-letter-paper-background-image_401335730.jpg);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carta-font{
+  font-family: 'Sono', sans-serif;
+}
+
 .twitter-timeline{
     width: 100% !important;
+}
+
+
+.red-button{
+  --color-bg:#E44E55;
+  --color-bg-light:#E47479;
+  --color-bg-dark:#D13239;
+}
+
+.green-button{
+  --color-bg:#00A07D;
+  --color-bg-light:#00AF8A;
+  --color-bg-dark:#008F70;
+}
+
+.blue-button{
+  --color-bg:#0066B4;
+  --color-bg-light:#3981CA;
+  --color-bg-dark:#004EAD;
+}
+
+.yellow-button{
+  --color-bg:#FFC054;
+  --color-bg-light:#FFD996;
+  --color-bg-dark:#F2AA30;
+  
+}
+
+.retro-button{
+  position:relative;
+  appearance:none;
+  box-sizing:border-box;
+  font-size:calc( var(--button-height) / 3 );
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+  height:var(--button-height);
+  min-width:var(--button-height);
+  border-radius:calc( var(--button-height) / 2);
+  border:0;
+  font-weight:800;
+  text-transform:uppercase;
+  color:var(--color-text);
+  text-shadow: 1px 1px var(--color-text-shadow);
+  cursor:pointer;
+  margin:6px 6px;
+  letter-spacing:.1em;
+  transition: all 200ms ease;
+  box-shadow:
+    -1px  -1px 1px var(--color-bg), 
+    0 0 0 4px var(--color-overlay-medium), 
+    1px  1px 1px var(--color-bg-dark), 
+    inset .0 .0 .0 var(--color-overlay-dark),   
+    inset .5rem .5rem .25rem var(--color-bg-light)
+}
+
+.retro-button::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+
+.retro-button:focus{
+  outline:none;
+  box-shadow:
+    -1px -1px 1px var(--color-bg-dark),
+    0 0 0 4px var(--color-tab-focus),
+    1px  1px 1px var(--color-bg-dark), 
+    inset 0 0 0 var(--color-overlay-dark),
+    inset .5rem .5rem .25rem var(--color-bg-light),
+    ;
+}
+
+.retro-button:hover{
+  box-shadow:
+    -1px -1px 1px var(--color-bg-dark),
+    0 0 0 4px var(--color-overlay-dark),
+    1px  1px 1px var(--color-bg-dark), 
+    inset 0 0 0 var(--color-overlay-dark),
+    inset .5rem .5rem .25rem var(--color-bg-light), 
+    ;
+}
+
+.retro-button:active{
+  box-shadow:
+    inset 1px 1px 1px var(--color-bg),
+    0 0 0 4px var(--color-overlay-dark), 
+    inset -1px -1px 1px var(--color-bg-light),    
+    inset .5rem .5rem .75rem var(--color-bg-dark), 
+    inset .5rem .5rem .5rem var(--color-bg-light), 
+}
+
+.presentation-content{
+  text-align:center;
+}
+
+.presentation-title{
+  color:rgba(0,0,0,.2);
+  text-shadow: 1px 1px rgba(255,255,255,.15);  
+  font-family: 'Open Sans', sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  margin-bottom:1rem;
+  font-size:1.5rem;
+}
+
+.top-button-group {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.bottom-button-group{
+  background:var(--color-bg);
+  padding:1rem;
+  border-radius:1rem;
+  box-shadow:
+    -1px -1px 1px var(--color-bg-light),
+    inset -1px -1px  1px var(--color-bg-dark)
+}
+
+/* pruebas */
+
+.container .imageContainer {
+  position: relative;
+}
+.container .imageContainer .foregroundImg {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+.container .imageContainer .backgroundImg {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  transform: scale(1.02);
+  z-index: 1;
+}
+.container .imageContainer .backgroundImg {
+  opacity: 1;
+  filter: blur(24px);
+}
+
+/* maquina de escribir */
+
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+.maquina-texto { 
+	position: relative; 
+	float: left;
+	background: black;
+	color: #fff;
+}
+
+.maquina-texto span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: black;
+    border-left: 1px solid #fff;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
 }
